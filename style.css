@@ -1,0 +1,113 @@
+:root{
+    --bg:#EFEFEF;
+    --font:#34312F;}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}   
+.header-menu-logo img{
+    width:40%;
+}
+#heading{
+    padding-left: 50px;
+}
+/*background*/
+
+.main-background img{
+    width: 1200px;
+}
+.main-title{
+    color: var(--font);
+    text-align: center;
+}
+/* products */
+.main-products{
+    margin-top: 3%;
+}
+.main-products h2{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.main-products div{
+    margin-left: 3%;
+}
+.card-body button{
+    width: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    
+}
+.main--products-2 button{
+    margin-top: 30px;
+}
+#prc{
+    margin-left: 70px;
+    padding-left: 110px;
+}
+#quantity{
+    padding-left: 48px;
+}
+#produc{
+    padding-left: 40px;
+}
+#total{
+    padding-left: 54px;
+}
+.btn--return{
+    border: var(--font);
+    color: var(--font);
+    font-size: 1.2rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+.btn--return:hover{
+    width:60px;
+    border: none;
+    background-color: var(--font);
+    color: white;
+}
+.btn--confirm{
+    width:120px;
+    border: none;
+    background-color: var(--font);
+    color: white;
+    font-size: 1.2rem; 
+}
+.btn--confirm:hover{
+    background-color: green;
+    font-weight: bold;
+}
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--bg);
+    margin-top: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-details--bullets li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.footer-details--bullets a{
+    text-decoration: none;
+    color:var(--font);
+}
+.footer-logo{
+    display: grid;
+    justify-content: end;
+}
+.footer-logo img{
+    width:20%;
+    
+}
+
