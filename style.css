@@ -112,6 +112,27 @@ html{
     background-color: var(--hover);
     font-weight: bold;
 }
+/* Cart */
+.main--cartTitle{
+    margin-left: 4%;
+    font-family: 'Roboto', sans-serif;
+}
+.main--productTable{
+    margin-top: 10px;
+}
+.table th{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.main--table-footer{
+    margin-top: 10%;
+    margin-bottom: 13%;
+}
+.table-footer--text{
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
 footer{
     display: grid;
     grid-template-columns: auto auto;

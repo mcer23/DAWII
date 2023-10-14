@@ -13,14 +13,28 @@
 </head>
 <body>
     <header class="header-menu">
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar">
             <div class="container-fluid">
                 <span><a class="navbar-brand header-menu-logo" href="/index.html"><img src="/assets/ico/sara.png" alt="logoSara"></a></span>
-              <form class="d-flex" role="search">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Dama</a></li>
+                      <li><a class="dropdown-item" href="#">Caballero</a></li>
+                      <li><a class="dropdown-item" href="#">Infantes</a></li>
+                      <li><a class="dropdown-item" href="#">Automóviles y Motos</a></li>
+                      <li><a class="dropdown-item" href="#">Telefonía</a></li>
+                      <li><a class="dropdown-item" href="#">Hogar</a></li>
+                      <li><a class="dropdown-item" href="#">Otros</a></li>
+                    </ul>
+                  </div>
+              <form class="d-flex header-menu--form" role="search">
                 <input class="form-control me-2" type="search" placeholder="Tenis deportivos" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                <button class="searchFor-btn" type="submit">Buscar</button>
                 <span class="nav-item">
-                    <a class="nav-link nav--item-icon" href="#"><img src="/assets/ico/cart.png" alt="cart icono" width="30px"></a>
+                    <a class="nav-link nav--item-icon" href="html/cart.html"><img src="/assets/ico/cart.png" alt="cart icono" width="30px"></a>
                   </span>
               </form>
             </div>
@@ -30,7 +44,7 @@
     <section class="main--cartTitle">
         <div class="d-flex">
             <div class="pt-1"><h3>Carrito</h3>
-            <p class="font-weight-normal">2 items</p>
+            <p class="font-weight-normal">2 artículos</p>
             </div>
         </div>
     </section>
@@ -70,7 +84,7 @@
         <div class="container bg-light rounded-bottom py-4" id="zero-pad">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10 col-12">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center table-footer--text">
                         <div>
                             <button class="btn--return">Regresar</button>
                         </div>
@@ -85,75 +99,6 @@
             </div>
         </div>
     </section>
-    <!-- <div class="container bg-white rounded-top mt-5" id="zero-pad">
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-10 col-12 pt-3">
-            <div class="d-flex">
-                <div class="pt-1"><h3>Carrito</h3>
-                <p class="font-weight-normal">2 items</p>
-                </div>
-            </div>
-            <div class="d-flex flex-row px-lg-5 mx-lg-5 mobile" id="heading">
-                <div class="px-lg-5 mr-lg-5" id="produc">Producto</div>
-                <div class="px-lg-5 ml-lg-5" id="prc">Precio</div>
-                <div class="px-lg-5 ml-lg-1" id="quantity">Cantidad</div>
-                <div class="px-lg-5 ml-lg-3" id="total">Total</div>
-            </div>
-            <div class="d-flex flex-row justify-content-between align-items-center pt-lg-4 pt-2 pb-3 border-bottom mobile">
-                <div class="d-flex flex-row align-items-center">
-                    <div><img src="#" width="150" height="150" alt="" id="image"></div>
-                    <div class="d-flex flex-column pl-md-3 pl-1">
-                        <div><h4>COTTON T-SHIRT</h4></div>
-                        <div >SKU:<span class="pl-2">091091001</span></div>
-                        <div>Color:<span class="pl-3">White</span></div>
-                        <div>Talla:<span class="pl-4"> M</span></div>
-                    </div>                    
-                </div>
-                <div class="pl-md-0 pl-1"><b>$9.99</b></div>
-                <div class="pl-md-0 pl-2">
-                    <span class="fa fa-minus-square text-secondary"></span><span class="px-md-3 px-1">2</span><span class="fa fa-plus-square text-secondary"></span>
-                </div>
-                <div class="pl-md-0 pl-1"><b>$19.98</b></div>
-                <div class="close">&times;</div>
-            </div>
-            <div class="d-flex flex-row justify-content-between align-items-center pt-4 pb-3 mobile">
-                <div class="d-flex flex-row align-items-center">
-                    <div><img src="#" width="150" height="150" alt="" id="image"></div>
-                    <div class="d-flex flex-column pl-md-3 pl-1">
-                        <div><h6>WHITE T-SHIRT</h6></div>
-                        <div >SKU:<span class="pl-2">056289891</span></div>
-                        <div>Color:<span class="pl-3">White</span></div>
-                        <div>Talla:<span class="pl-4"> XL</span></div>
-                    </div>                    
-                </div>
-                <div class="pl-md-0 pl-1"><b>$20.9</b></div>
-                <div class="pl-md-0 pl-2">
-                    <span class="fa fa-minus-square text-secondary"></span><span class="px-md-3 px-1">2</span><span class="fa fa-plus-square text-secondary"></span>
-                </div>
-                <div class="pl-md-0 pl-1"><b>$41.8</b></div>
-                <div class="close">&times;</div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="container bg-light rounded-bottom py-4" id="zero-pad">
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-10 col-12">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <button class="btn--return">Regresar</button>
-                </div>
-                <div class="px-md-0 px-1" id="footer-font">
-                    <b class="pl-md-4">Total <span class="pl-md-4">$61.78</span></b>
-                </div>
-                <div>
-                    <button class="btn--confirm">Confirmar compra</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 </main>
 <footer>
     <div class="footer-details">
