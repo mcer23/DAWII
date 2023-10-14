@@ -1,6 +1,7 @@
 :root{
     --bg:#EFEFEF;
-    --font:#34312F;}
+    --font:#34312F;
+    --hover:#386b47;}
 
 * {
     box-sizing: border-box;
@@ -19,8 +20,35 @@ html{
     width:241px;
     height: 56px;
 }
+.header-menu--form{
+    margin-right: 5%;
+}
+.header-menu--form button{
+    background-color: transparent;
+    border: var(--hover);
+    border-radius: 2px;
+    color: var(--hover);
+    padding: 0 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.header-menu--form button:hover{
+    background-color: var(--hover);
+    color: white;
+}
+.nav-item img{
+    margin-left: 10px;
+}
 #heading{
     padding-left: 50px;
+}
+.dropdown-menu a{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+.dropdown button{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
 }
 /*background*/
 
@@ -44,7 +72,7 @@ html{
 }
 .card-body button{
     width: 150px;
-    background-color: blue;
+    background-color: var(--hover);
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -54,19 +82,12 @@ html{
 .main--products-2 button{
     margin-top: 30px;
 }
-#prc{
-    margin-left: 70px;
-    padding-left: 110px;
+.products-pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
-#quantity{
-    padding-left: 48px;
-}
-#produc{
-    padding-left: 40px;
-}
-#total{
-    padding-left: 54px;
-}
+
 .btn--return{
     border: var(--font);
     color: var(--font);
@@ -88,7 +109,7 @@ html{
     font-size: 1.2rem; 
 }
 .btn--confirm:hover{
-    background-color: green;
+    background-color: var(--hover);
     font-weight: bold;
 }
 footer{
@@ -112,7 +133,8 @@ footer{
     justify-content: end;
 }
 .footer-logo img{
-    width:20%;
+    width:50%;
+    margin-top: 10%;
     
 }
 

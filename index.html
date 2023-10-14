@@ -17,9 +17,23 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <span><a class="navbar-brand header-menu-logo" href="#"><img src="/assets/ico/sara.png" alt="logoSara"></a></span>
-              <form class="d-flex" role="search">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Dama</a></li>
+                      <li><a class="dropdown-item" href="#">Caballero</a></li>
+                      <li><a class="dropdown-item" href="#">Infantes</a></li>
+                      <li><a class="dropdown-item" href="#">Automóviles y Motos</a></li>
+                      <li><a class="dropdown-item" href="#">Telefonía</a></li>
+                      <li><a class="dropdown-item" href="#">Hogar</a></li>
+                      <li><a class="dropdown-item" href="#">Otros</a></li>
+                    </ul>
+                  </div>
+              <form class="d-flex header-menu--form" role="search">
                 <input class="form-control me-2" type="search" placeholder="Tenis deportivos" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                <button class="searchFor-btn" type="submit">Buscar</button>
                 <span class="nav-item">
                     <a class="nav-link nav--item-icon" href="html/cart.html"><img src="/assets/ico/cart.png" alt="cart icono" width="30px"></a>
                   </span>
@@ -40,7 +54,7 @@
                 <div class="card main--products-1" style="width: 18rem;">
                     <img src="/assets/img/p2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Blusa puma</h5>
+                    <h5 class="card-title">Blusa Puma®</h5>
                     <p class="card-text">$1,899</p>
                     </div>
                     <div class="card-body">
@@ -50,7 +64,7 @@
                 <div class="card main--products-2" style="width: 18rem;">
                     <img src="/assets/img/p3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Tenis nike</h5>
+                    <h5 class="card-title">Tenis Nike®</h5>
                     <p class="card-text">$1,499</p>
                     </div>
                     <div class="card-body">
@@ -88,6 +102,23 @@
                     </div>
                 </div>
             </div>
+            <nav aria-label="Page navigation example" class="products-pages">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
         </section>
     </main>
     <footer>
